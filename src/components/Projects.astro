@@ -7,21 +7,12 @@ import { TAGS } from '@/const.d.astro';
 
 const PROJECTS = [
 	{
-		title: 'MulticreditosDM - Sistema de préstamos privada',
-		description:
-			'MulticreditosDM es un sistema de gestión de préstamos desarrollado para una financiera en Lima, Perú. Permite administrar préstamos exclusivamente a clientes de diferentes oficinas.',
-		link: 'https://multicreditosdm.com/',
-		github: '',
-		image: '/projects/multicreditosdm.webp',
-		tags: [TAGS.TAILWIND, TAGS.LIVEWIRE, TAGS.LARAVEL, TAGS.VSC],
-	},
-	{
-		title: 'Valuem Finance - Plataforma de finanzas',
+		title: 'Valuem Finance - Plataforma de Finanzas',
 		description:
 			'Valuem Finance es una plataforma de finanzas que ofrece soluciones innovadoras para la gestión de inversiones. Con un enfoque en la tecnología y la usabilidad, Valuem Finance busca simplificar el proceso de inversión para todos.',
 		link: 'https://valuemfinance.com/',
 		image: '/projects/valuemfinance.webp',
-		tags: [TAGS.CSS, TAGS.JAVASCRIPT, TAGS.LARAVEL, TAGS.VSC],
+		tags: [TAGS.CSS, TAGS.JAVASCRIPT, TAGS.LARAVEL, TAGS.VSC, TAGS.GIT],
 	},
 	{
 		title: 'Cloummerce - Desarrollo de sitios web y Software',
@@ -29,14 +20,88 @@ const PROJECTS = [
 			'Cloummerce es una agencia de desarrollo web y software. Creamos sitios web únicos y personalizados para nuestros clientes. Utilizamos las últimas tecnologías. Contamos con profesionales com más de 10 años de experiencia.',
 		link: 'https://cloummerce.com/',
 		image: '/projects/cloummerce.webp',
-		tags: [TAGS.WORDPRESS, TAGS.VSC],
+		tags: [TAGS.WORDPRESS],
+	},
+	{
+		title: 'Hama Avanza - Sistema de capacitaciones Mineras',
+		description:
+			'Hama Avanza es un sistema desarrollado para la gestión de capacitaciones en el sector minero. Permite organizar, administrar y realizar un seguimiento eficiente de los cursos y entrenamientos ofrecidos a los trabajadores, facilitando el cumplimiento de normativas y mejorando la formación del personal.',
+		link: 'https://www.hamaperuavanza.com/',
+		image: '/projects/hamaavanza.webp',
+		tags: [TAGS.CSS, TAGS.JAVASCRIPT, TAGS.LARAVEL, TAGS.VSC, TAGS.GIT],
+	},
+	{
+		title: 'MulticreditosDM - Sistema para manejo de Préstamos',
+		description:
+			'MulticreditosDM es un sistema de gestión de préstamos desarrollado para una financiera en Lima, Perú. Permite administrar préstamos exclusivamente a clientes de diferentes oficinas.',
+		link: 'https://multicreditosdm.com/',
+		image: '/projects/multicreditosdm.webp',
+		tags: [TAGS.TAILWIND, TAGS.LIVEWIRE, TAGS.LARAVEL, TAGS.VSC, TAGS.GIT],
+	},
+	{
+		title: 'Web Adp Technology - Landing Page',
+		description:
+			'Web Adp Technology es una landing page desarrollada para una empresa de tecnología. Presenta los servicios, soluciones y valores de la compañía de manera clara y atractiva, facilitando el contacto con potenciales clientes y mejorando la presencia digital de la empresa.',
+		image: '/projects/adptechnology.webp',
+		tags: [TAGS.WORDPRESS],
+	},
+	{
+		title: 'Franco Chicken - Sistema de manejo administrativo para Pollerias',
+		description:
+			'Franco Chicken es un sistema de gestión administrativa desarrollado para pollerías. Permite controlar ventas, inventarios, compras y reportes de manera eficiente. Facilita la administración de productos, proveedores y clientes, optimizando los procesos internos y mejorando la toma de decisiones en el negocio.',
+		github: 'https://github.com/wllparedes/2.0-PolleriaFrancoChicken.git',
+		image: '/projects/francochicken.webp',
+		tags: [TAGS.CSS, TAGS.JAVASCRIPT, TAGS.PHP, TAGS.VSC, TAGS.GIT],
+	},
+	{
+		title: 'Farmype - Sistema de manejo administrativo para Farmacias',
+		description:
+			'Farmype es un sistema de gestión administrativa diseñado específicamente para farmacias. Permite controlar inventarios, ventas, compras y reportes de manera eficiente. Facilita la administración de productos farmacéuticos, proveedores y clientes, optimizando los procesos internos y mejorando la toma de decisiones.',
+		image: '/projects/farmype.webp',
+		tags: [TAGS.CSS, TAGS.JAVASCRIPT, TAGS.LARAVEL, TAGS.VSC],
+	},
+	{
+		title: 'Todo',
+		description:
+			'Todo es una aplicación web desarrollada con React y TypeScript que permite a los usuarios gestionar tareas de manera eficiente. Ofrece funcionalidades como agregar, marcar como completadas y eliminar tareas, todo en una interfaz moderna y fácil de usar.',
+		link: 'https://todo-react-typescript-mu.vercel.app/',
+		github: 'https://github.com/UOdriozola28/todo-react-typescript.git',
+		image: '/projects/todo.webp',
+		tags: [TAGS.CSS, TAGS.REACT, TAGS.TYPESCRIPT, TAGS.VSC],
+	},
+	{
+		title: 'React Shop',
+		description:
+			'React Shop es una aplicación web de carrito de compras desarrollada con React. Permite a los usuarios explorar productos y agregarlos al carrito de manera sencilla e intuitiva. Incluye funcionalidades como filtrado de productos, manejo de cantidades y una interfaz moderna y responsiva.',
+		link: 'https://shopping-cart-with-react-five.vercel.app/',
+		github: 'https://github.com/UOdriozola28/shopping-cart-with-react.git',
+		image: '/projects/react-shop.webp',
+		tags: [TAGS.CSS, TAGS.REACT, TAGS.VSC],
+	},
+	{
+		title: 'Movie Search',
+		description:
+			'Movie Search es una aplicación web que permite a los usuarios buscar información sobre películas utilizando la API de OMDb. Ofrece una interfaz intuitiva para explorar títulos, ver detalles y descubrir nuevas películas de manera sencilla y rápida.',
+		link: 'https://movie-search-react-ten.vercel.app/',
+		github: 'https://github.com/UOdriozola28/movie-search-react.git',
+		image: '/projects/movie-search.webp',
+		tags: [TAGS.CSS, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TYPESCRIPT, TAGS.VSC],
+	},
+	{
+		title: 'BlackJack',
+		description:
+			'BlackJack es un juego de cartas clásico implementado en la web. Permite a los usuarios jugar contra la computadora, siguiendo las reglas tradicionales del BlackJack. Incluye una interfaz interactiva y lógica de juego sencilla para practicar y divertirse.',
+		link: 'https://wllparedes.github.io/blackJack.github.io/',
+		github: 'https://github.com/wllparedes/blackJack.github.io.git',
+		image: '/projects/blackjack.webp',
+		tags: [TAGS.CSS, TAGS.JAVASCRIPT, TAGS.VSC],
 	},
 ];
 ---
 
 <div class='flex flex-col gap-y-16'>
 	{
-		PROJECTS.map(({ image, title, description, tags, link, github }, index) => (
+		PROJECTS.map(({ image, title, description, tags, link, github }) => (
 			<article class='flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0'>
 				<div class='w-full md:w-1/2'>
 					<div class='relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50'>
@@ -45,7 +110,7 @@ const PROJECTS = [
 							height={56}
 							alt='Recién llegado vs 5 años en Nueva Zelanda'
 							class='object-cover object-top w-full transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105'
-							loading={index === 0 ? 'eager' : 'lazy'}
+							loading='lazy'
 							src={image}
 						/>
 					</div>
@@ -56,7 +121,7 @@ const PROJECTS = [
 						{title}
 					</h3>
 					<div class='flex flex-wrap mt-2'>
-						<ul class='flex flex-row mb-2 gap-x-2'>
+						<ul class='flex flex-row mb-2 gap-2 flex-wrap'>
 							{tags.map((tag) => (
 								<li>
 									<span
