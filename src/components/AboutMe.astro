@@ -1,7 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-
-const personalImageAlt = 'Walinn Paredes';
+import { NAME } from '@/const.d.astro';
 ---
 
 <article
@@ -11,8 +10,8 @@ const personalImageAlt = 'Walinn Paredes';
 		class='[&>p]:mb-4 [&>p>strong]:text-cyan-500 dark:[&>p>strong]:text-cyan-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1'
 	>
 		<p>
-			Me llamo Walinn Paredes pero mis amigos me llaman midu. Empecé en la
-			programación con un Amstrad, tenía 10 años. Actualmente estoy <strong
+			Me llamo {NAME} y soy de Lima, Perú. Empecé en la programación cuando tenía
+			17 años. Actualmente estoy <strong
 				>liderando equipos de desarrollo en multinacionales</strong
 			>.
 		</p>
@@ -38,7 +37,7 @@ const personalImageAlt = 'Walinn Paredes';
 		width={200}
 		height={200}
 		src='https://avatars.githubusercontent.com/u/201667179?v=4'
-		alt={personalImageAlt}
+		alt={NAME}
 		class='order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-cyan-500/5 ring-1 ring-black/70 dark:ring-white/20'
 		style='object-position: 50% 50%'
 		loading='lazy'

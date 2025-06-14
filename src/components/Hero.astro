@@ -1,11 +1,11 @@
 ---
-const personalImageAlt = 'Walinn Paredes';
 import Badge from '@/components/Badge.astro';
 import SocialPill from '@/components/SocialPill.astro';
 import LinkedInIcon from '@icons/LinkedIn.astro';
 import MailIcon from '@icons/Mail.astro';
 import GitHubIcon from '@icons/GitHub.astro';
 import Image from 'astro/components/Image.astro';
+import { NAME } from '@/const.d.astro';
 ---
 
 <div class='max-w-xl'>
@@ -13,7 +13,7 @@ import Image from 'astro/components/Image.astro';
 		<Image
 			class='rounded-full shadow-lg size-16'
 			src='https://avatars.githubusercontent.com/u/201667179?v=4'
-			alt={personalImageAlt}
+			alt={NAME}
 			width={64}
 			height={64}
 			loading='eager'
@@ -30,7 +30,7 @@ import Image from 'astro/components/Image.astro';
 	<h1
 		class='text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white'
 	>
-		Hey, soy Walinn Paredes
+		Hey, soy {NAME}
 	</h1>
 	<p
 		class='mt-6 text-xl text-gray-800 dark:[&>strong]:text-cyan-200 [&>strong]:text-cyan-500 [&>strong]:font-semibold dark:text-gray-300'

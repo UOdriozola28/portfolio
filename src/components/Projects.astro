@@ -1,41 +1,35 @@
 ---
 import GitHub from '@icons/GitHub.astro';
-import NextJS from '@icons/NextJS.astro';
-import Tailwind from '@icons/Tailwind.astro';
 import Link from '@icons/Link.astro';
 import LinkButton from '@components/LinkButton.astro';
 import { Image } from 'astro:assets';
-
-const TAGS = {
-	NEXT: {
-		name: 'Next.js',
-		class: 'bg-black text-white',
-		icon: NextJS,
-	},
-	TAILWIND: {
-		name: 'Tailwind CSS',
-		class: 'bg-[#003159] text-white',
-		icon: Tailwind,
-	},
-};
+import { TAGS } from '@/const.d.astro';
 
 const PROJECTS = [
 	{
-		title: 'SVGL - A beautiful library with SVG logos',
+		title: 'MulticreditosDM - Sistema de préstamos privada',
 		description:
-			'Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.',
-		link: 'https://svgl.vercel.app/',
-		github: 'https://github.com/pheralb/svgl',
-		image: '/projects/svgl.webp',
-		tags: [TAGS.NEXT, TAGS.TAILWIND],
+			'MulticreditosDM es un sistema de gestión de préstamos desarrollado para una financiera en Lima, Perú. Permite administrar préstamos exclusivamente a clientes de diferentes oficinas.',
+		link: 'https://multicreditosdm.com/',
+		github: '',
+		image: '/projects/multicreditosdm.webp',
+		tags: [TAGS.TAILWIND, TAGS.LIVEWIRE, TAGS.LARAVEL, TAGS.VSC],
 	},
 	{
-		title: 'AdventJS - Retos de programación con JavaScript y TypeScript',
+		title: 'Valuem Finance - Plataforma de finanzas',
 		description:
-			'Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.',
-		link: 'https://adventjs.dev',
-		image: '/projects/adventjs.webp',
-		tags: [TAGS.NEXT, TAGS.TAILWIND],
+			'Valuem Finance es una plataforma de finanzas que ofrece soluciones innovadoras para la gestión de inversiones. Con un enfoque en la tecnología y la usabilidad, Valuem Finance busca simplificar el proceso de inversión para todos.',
+		link: 'https://valuemfinance.com/',
+		image: '/projects/valuemfinance.webp',
+		tags: [TAGS.CSS, TAGS.JAVASCRIPT, TAGS.LARAVEL, TAGS.VSC],
+	},
+	{
+		title: 'Cloummerce - Desarrollo de sitios web y Software',
+		description:
+			'Cloummerce es una agencia de desarrollo web y software. Creamos sitios web únicos y personalizados para nuestros clientes. Utilizamos las últimas tecnologías. Contamos con profesionales com más de 10 años de experiencia.',
+		link: 'https://cloummerce.com/',
+		image: '/projects/cloummerce.webp',
+		tags: [TAGS.WORDPRESS, TAGS.VSC],
 	},
 ];
 ---
