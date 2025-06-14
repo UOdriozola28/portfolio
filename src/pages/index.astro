@@ -9,11 +9,13 @@ import Hero from '@/components/Hero.astro';
 import Briefcase from '@icons/Briefcase.astro';
 import CodeIcon from '@icons/Code.astro';
 import ProfileCheck from '@icons/ProfileCheck.astro';
+import { NAME } from '@/const.d.astro';
 ---
 
 <Layout
-	title='Portfolio de Wallace - Desarrollador y Programador Web'
-	description='Portfolio de Wallace, un ingeniero de software con más de 15 años de experiencia en desarrollo web. Especializado en crear aplicaciones únicas y contenido sobre programación.'
+	title=`Portfolio de ${NAME} - Desarrollador y Programador Web`
+	description=`Portfolio de ${NAME}, Programador autodidacta con formación técnica, dedicado al desarrollo de
+			sitios, aplicaciones y sistemas web.`
 >
 	<main class='px-4'>
 		<SectionContainer class='py-16 md:py-36'>
