@@ -3,6 +3,7 @@ import '@fontsource-variable/onest';
 import '@styles/global.css';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
+import Badge from '@/components/Badge.astro';
 
 interface Props {
 	title: string;
@@ -32,6 +33,14 @@ const { title, description } = Astro.props;
 		<Header />
 		<slot />
 		<Footer />
+		<div
+			id='button-cv'
+			class='text-white rounded-xl p-4 flex fixed bottom-5 right-5'
+		>
+			<Badge>
+				<a href='/pdf/walinn-paredes_CV.pdf' download> Download CV </a>
+			</Badge>
+		</div>
 	</body>
 
 	<style is:global>
