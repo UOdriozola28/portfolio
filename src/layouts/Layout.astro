@@ -19,6 +19,10 @@ const { title, description } = Astro.props;
 		<meta charset='UTF-8' />
 		<meta name='description' content={description} />
 		<meta name='viewport' content='width=device-width' />
+		<meta property='og:image' content='/preview/content.png' />
+		<meta property='og:url' content='https://walinn-paredes.vercel.app' />
+		<meta property='og:type' content='website' />
+
 		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
 		<meta name='generator' content={Astro.generator} />
 		<title>{title}</title>
