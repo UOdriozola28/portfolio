@@ -1,48 +1,79 @@
-# Astro Starter Kit: Basics
+# Portfolio de Walinn Paredes
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Bienvenido al repositorio de mi portafolio personal. Este proyecto es una aplicación web moderna y rápida diseñada para mostrar mi experiencia laboral, proyectos y habilidades como desarrollador web.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Tecnologías Utilizadas
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este proyecto ha sido construido utilizando las siguientes tecnologías de vanguardia para asegurar rendimiento, accesibilidad y una excelente experiencia de desarrollador:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+-   **[Astro](https://astro.build/):** Framework web para construir sitios rápidos orientados al contenido.
+-   **[Tailwind CSS](https://tailwindcss.com/):** Framework de utilidades CSS para un diseño rápido y responsivo.
+-   **[Vite](https://vitejs.dev/):** Herramienta de construcción frontend de próxima generación.
+-   **HTML5 & CSS3:** Estándares web modernos.
+-   **JavaScript/TypeScript:** Lógica e interactividad.
 
-## 🚀 Project Structure
+## 📂 Estructura del Proyecto
 
-Inside of your Astro project, you'll see the following folders and files:
+La estructura del proyecto está organizada de la siguiente manera:
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+src/
+├── components/       # Componentes reutilizables (Hero, Experience, Projects, etc.)
+├── icons/            # Iconos SVG utilizados en la aplicación
+├── layouts/          # Plantillas de diseño principales (Layout.astro)
+├── pages/            # Rutas de la aplicación (index.astro)
+└── styles/           # Estilos globales
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### Componentes Principales
 
-## 🧞 Commands
+-   **Hero:** Sección de introducción y bienvenida.
+-   **Experience:** Línea de tiempo con mi experiencia laboral.
+-   **Projects:** Galería de proyectos destacados.
+-   **AboutMe:** Información personal y profesional detallada.
+-   **SectionContainer:** Contenedor para estandarizar el espaciado y diseño de las secciones.
 
-All commands are run from the root of the project, from a terminal:
+## 🛠️ Instalación y Uso
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
-## 👀 Want to learn more?
+1.  **Clonar el repositorio:**
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    cd portfolio-dev
+    ```
+
+2.  **Instalar dependencias:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Iniciar el servidor de desarrollo:**
+
+    ```bash
+    npm run dev
+    ```
+
+    El sitio estará disponible en `http://localhost:4321/`.
+
+4.  **Construir para producción:**
+
+    ```bash
+    npm run build
+    ```
+
+    Esto generará los archivos estáticos en la carpeta `dist/`.
+
+## 🎨 Personalización
+
+Puedes personalizar fácilmente el contenido editando los archivos en `src/components/`. La información constante, como el nombre, se puede encontrar y modificar en `src/const.d.astro` (si aplica) o directamente en los componentes.
+
+## 📄 Licencia
+
+Este proyecto es de uso personal para mi portafolio profesional.
+
+---
+
+Desarrollado con ❤️ por Walinn Paredes.
